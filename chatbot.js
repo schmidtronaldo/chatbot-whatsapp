@@ -21,8 +21,12 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 // Função para verificar se a mensagem contém uma palavra-chave
 const containsKeyword = (message, keywordList) => {
-  const regex = new RegExp(`(${keywordList.join('|')})`, 'i');
-  return message.match(regex);
+  // Converte a mensagem e as palavras-chave para minúsculas
+  const lowerCaseMessage = message.toLowerCase();
+  const lowerCaseKeywords = keywordList.map(keyword => keyword.toLowerCase());
+
+  // Verifica se alguma palavra-chave está presente na mensagem
+  return lowerCaseKeywords.some(keyword => lowerCaseMessage.includes(keyword));
 };
 
 // Respostas do chatbot
