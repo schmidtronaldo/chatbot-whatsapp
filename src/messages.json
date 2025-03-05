@@ -1,29 +1,24 @@
-
 {
   "greetings": {
-    "welcome": "Olá! {name}, sou o assistente virtual da empresa tal. Como posso ajudá-lo hoje? Por favor, digite uma das opções abaixo:\n\n1 - Como funciona\n2 - Valores dos planos\n3 - Benefícios\n4 - Como aderir\n5 - Outras perguntas",
-    "fallback": "Desculpe, não entendi. Por favor, digite uma das opções:\n\n1 - Como funciona\n2 - Valores dos planos\n3 - Benefícios\n4 - Como aderir\n5 - Outras perguntas"
+    "welcome": "Olá! {name}, sou o seu assistente virtual. 😊\n\nPor favor, escolha uma das opções abaixo:\n\n*1* - Como funciona\n*2* - Valores dos planos\n*3* - Benefícios\n*4* - Como aderir\n*5* - Mais Informações",
+    "fallback": "Desculpe, não entendi. 😅\n\nPor favor, digite um numero válido:\n\n*1* - Como funciona\n*2* - Valores dos planos\n*3* - Benefícios\n*4* - Como aderir\n*5* - Mais Informações"
   },
   "options": {
     "1": [
-      "Nosso serviço oferece consultas médicas 24 horas por dia, 7 dias por semana, diretamente pelo WhatsApp.\n\nNão há carência, o que significa que você pode começar a usar nossos serviços imediatamente após a adesão.\n\nOferecemos atendimento médico ilimitado, receitas\n\nAlém disso, temos uma ampla gama de benefícios, incluindo acesso a cursos gratuitos.",
-      "COMO FUNCIONA?\nÉ muito simples.\n\n1º Passo\nFaça seu cadastro e escolha o plano que desejar.\n\n2º Passo\nApós efetuar o pagamento do plano escolhido você já terá acesso a nossa área exclusiva para começar seu atendimento na mesma hora.\n\n3º Passo\nSempre que precisar.",
-      "Link para cadastro: https://site.com"
+      "📌 *Como Funciona?*\n\nNosso serviço oferece:\n\n- Consultas médicas 24 horas por dia, 7 dias por semana, diretamente pelo WhatsApp.\n- Sem carência: comece a usar imediatamente após a adesão.\n- Atendimento médico ilimitado e receitas.\n- Acesso a cursos gratuitos e outros benefícios.\n\n🔗 [Link para cadastro](https://meu.site.com)",
+      "📌 *Passo a Passo:*\n\n1. *Cadastro:* Faça seu cadastro e escolha o plano desejado.\n2. *Pagamento:* Após o pagamento, você terá acesso imediato à área exclusiva.\n3. *Atendimento:* Use o serviço sempre que precisar.\n\n🔗 [Link para cadastro](https://meu.site.com)"
     ],
     "2": [
-      "*Plano Individual:* R$22,50 por mês.\n\n*Plano Família:* R$39,90 por mês, inclui você mais 3 dependentes.\n\n*Plano TOP Individual:* R$42,50 por mês, com benefícios adicionais como\n\n*Plano TOP Família:* R$79,90 por mês, inclui você mais 3 dependentes.",
-      "Link para cadastro: https://site.com"
+      "💲 *Valores dos Planos:*\n\n- *Plano Individual:* R$22,50/mês\n- *Plano Família:* R$39,90/mês (você + 3 dependentes)\n- *Plano TOP Individual:* R$42,50/mês (com benefícios adicionais)\n- *Plano TOP Família:* R$79,90/mês (você + 3 dependentes)\n\n🔗 [Link para cadastro](https://meu.site.com)"
     ],
     "3": [
-      "Sorteio de em prêmios todo ano.\n\nAtendimento médico ilimitado 24h por dia.\n\nReceitas de medicamentos.",
-      "Link para cadastro: https://site.com"
+      "🎁 *Benefícios:*\n\n- Sorteio de prêmios anualmente.\n- Atendimento médico ilimitado 24/7.\n- Receitas de medicamentos.\n\n🔗 [Link para cadastro](https://meu.site.com)"
     ],
     "4": [
-      "Você pode aderir aos nossos planos diretamente pelo nosso site ou pelo WhatsApp.\n\nApós a adesão, você terá acesso imediato.",
-      "Link para cadastro: https://site.com"
+      "📝 *Como Aderir:*\n\nVocê pode aderir aos nossos planos:\n\n- Diretamente pelo nosso site.\n- Ou pelo WhatsApp.\n\nApós a adesão, acesso imediato ao serviço.\n\n🔗 [Link para cadastro](https://meu.site.com)"
     ],
     "5": [
-      "Se você tiver outras dúvidas ou precisar de mais informações, por favor, fale aqui nesse whatsapp ou visite nosso site: https://site.com."
+      "❓ *Mais Informações:*\n\nSe tiver outras dúvidas ou precisar de mais informações:\n\n- Fale conosco aqui no WhatsApp.\n- Ou visite nosso site: [https://site.com](https://meu.site.com)."
     ]
   }
 }

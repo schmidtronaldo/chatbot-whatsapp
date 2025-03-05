@@ -1,6 +1,6 @@
 
 {
-    "greetings": ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite"],
+    "greetings": ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite" , " "],
     "menu": ["menu", "opções", "ajuda"],
     "plans": ["planos", "valores", "preços"],
     "benefits": ["benefícios", "vantagens"],

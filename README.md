@@ -12,15 +12,15 @@
 /chatbot
 │
 ├── /src
-│   ├── chatbot.js          # Código principal do chatbot
-│   ├── nlpHandler.js       # Lógica de NLP e análise de intenções
-│   ├── contextHandler.js   # Gerenciamento de contexto do usuário
-│   ├── responses.js        # Respostas do chatbot
-│   ├── simulateTyping.js   # Função para simular digitação
-│   ├── messages.json       # Mensagens do chatbot
-│   └── keywords.json       # Palavras-chave
+│   ├── chatbot.js          
+│   ├── nlpHandler.js       
+│   ├── contextHandler.js  
+│   ├── responses.js        
+│   ├── simulateTyping.js   
+│   ├── messages.json       
+│   └── keywords.json      
 │
-└── package.json            # Dependências do projeto
+└── package.json            
 
 
 ## Como executar
