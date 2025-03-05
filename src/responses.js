@@ -1,6 +1,6 @@
 
 import messages from './messages.json';
-import simulateTyping from './simulateTyping';
+import simulateTyping from './simulateTyping.js';
 
 const responses = {
   '1': async (msg) => {
