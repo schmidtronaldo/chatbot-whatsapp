@@ -2,6 +2,7 @@
   "type": "module",
   "dependencies": {
     "qrcode-terminal": "^0.14.0",
-    "whatsapp-web.js": "^1.30.0"
+    "whatsapp-web.js": "^1.30.0",
+    "compromise": "^13.0.0"
   }
 }
