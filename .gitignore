@@ -1,0 +1,32 @@
+
+# Ignorar node_modules (dependências do Node.js)
+node_modules/
+
+# Ignorar arquivos de ambiente local (como .env)
+.env
+.env.local
+
+# Ignorar logs e arquivos temporários
+*.log
+*.tmp
+*.temp
+
+# Ignorar arquivos de configuração do IDE
+.vscode/
+.idea/
+
+# Ignorar arquivos gerados pelo WhatsApp Web (sessões e mídia)
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Ignorar arquivos de build (se houver)
+dist/
+build/
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos específicos do projeto
+session.json
+qrcode.png
