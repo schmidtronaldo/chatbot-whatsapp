@@ -1,8 +1,26 @@
 {
+  "name": "whatsapp-chatbot",
+  "version": "1.0.0",
+  "description": "Um chatbot para WhatsApp com suporte a NLP e contexto de conversa.",
+  "main": "src/chatbot.js",
   "type": "module",
+  "scripts": {
+    "start": "node src/chatbot.js"
+  },
   "dependencies": {
-    "qrcode-terminal": "^0.14.0",
-    "whatsapp-web.js": "^1.30.0",
-    "compromise": "^13.0.0"
-  }
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0",
+    "compromise": "^14.11.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "whatsapp",
+    "chatbot",
+    "nlp",
+    "compromise"
+  ],
+  "author": "@schmidtcoders",
+  "license": "MIT"
 }

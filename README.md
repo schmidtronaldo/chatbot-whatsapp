@@ -25,13 +25,13 @@
 
 ## Como executar
 
-    Instale as dependências:
+> Instale as dependências:
    
-    ``` npm install ```
+    ` npm install `
 
     Execute o chatbot:
    
-    ``` node src/chatbot.js ````
+    ` node src/chatbot.js `
 
 9. Melhorias futuras
 
