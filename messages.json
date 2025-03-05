@@ -1,4 +1,4 @@
-
+// messages.json
 {
     "greetings": {
       "welcome": "Olá! {name}, sou o assistente virtual da empresa tal. Como posso ajudá-lo hoje? Por favor, digite uma das opções abaixo:\n\n1 - Como funciona\n2 - Valores dos planos\n3 - Benefícios\n4 - Como aderir\n5 - Outras perguntas",

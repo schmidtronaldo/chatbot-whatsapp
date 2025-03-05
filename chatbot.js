@@ -3,8 +3,9 @@ import qrcode from 'qrcode-terminal';
 import { Client } from 'whatsapp-web.js';
 import fs from 'fs';
 
-// Carrega as mensagens do arquivo JSON
+// Carrega as mensagens e palavras-chave dos arquivos JSON
 const messages = JSON.parse(fs.readFileSync('./messages.json', 'utf-8'));
+const keywords = JSON.parse(fs.readFileSync('./keywords.json', 'utf-8'));
 
 // Inicializa o cliente
 const client = new Client();
@@ -17,6 +18,12 @@ const simulateTyping = async (chat, duration) => {
 
 // Função para criar um delay
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+
+// Função para verificar se a mensagem contém uma palavra-chave
+const containsKeyword = (message, keywordList) => {
+  const regex = new RegExp(`(${keywordList.join('|')})`, 'i');
+  return message.match(regex);
+};
 
 // Respostas do chatbot
 const responses = {
@@ -71,7 +78,7 @@ client.on('message', async (msg) => {
     if (!msg.body || !msg.from.endsWith('@c.us')) return;
 
     // Resposta inicial ao comando "menu" ou saudações
-    if (msg.body.match(/(menu|Menu|dia|tarde|noite|oi|Oi|Olá|olá|ola|Ola)/i)) {
+    if (containsKeyword(msg.body, keywords.greetings)) {
       const chat = await msg.getChat();
       await simulateTyping(chat, 3000);
       const contact = await msg.getContact();
@@ -85,7 +92,7 @@ client.on('message', async (msg) => {
     // Resposta às opções do menu
     if (responses[msg.body]) {
       await responses[msg.body](msg);
-    } else if (!msg.body.match(/(menu|Menu|dia|tarde|noite|oi|Oi|Olá|olá|ola|Ola)/i)) {
+    } else if (!containsKeyword(msg.body, keywords.greetings)) {
       // Fallback para mensagens não reconhecidas
       await client.sendMessage(msg.from, messages.greetings.fallback);
     }
