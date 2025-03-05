@@ -6,6 +6,8 @@ node_modules/
 .env
 .env.local
 
+package-lock.json
+
 # Ignorar logs e arquivos temporários
 *.log
 *.tmp
