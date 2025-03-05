@@ -1,14 +1,14 @@
 
 import qrcode from 'qrcode-terminal';
 import { Client } from 'whatsapp-web.js';
-// import fs from 'fs';
+import { readFileSync } from 'fs';
 import analyzeIntent from './nlpHandler.js';
 import { getContext } from './contextHandler.js';
 import responses from './responses.js';
 import simulateTyping from './simulateTyping.js';
 
-// Carrega as mensagens com import assertion
-import messages from './messages.json' assert { type: 'json' };
+// Carrega as mensagens
+const messages = JSON.parse(readFileSync('./src/messages.json', 'utf-8'));
 
 // Inicializa o cliente
 const client = new Client();
