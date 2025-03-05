@@ -1,6 +1,4 @@
-Estou desenvolvendo um chatbot para se integrar ao whatsapp e ficar disponivel 24 horas.
 
-Preciso de sua ajuda para analisar o código e encontrar possiveis erros ou inconsistencias:
 
 ## Estrutura do projeto
 
@@ -317,5 +315,3 @@ export default simulateTyping;
 }
 ```
 
-Após a anlise do código faça a s correçoes necessarias e me mostre o código completo.
-Obrigado.
