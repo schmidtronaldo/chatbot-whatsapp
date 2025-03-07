@@ -1,5 +1,5 @@
-
-import qrcode from 'qrcode-terminal';
+import express from 'express';
+import qrcode from 'qrcode';
 import { Client } from 'whatsapp-web.js';
 import { readFileSync } from 'fs';
 import analyzeIntent from './nlpHandler.js';
@@ -10,13 +10,30 @@ import simulateTyping from './simulateTyping.js';
 // Carrega as mensagens
 const messages = JSON.parse(readFileSync('./src/messages.json', 'utf-8'));
 
-// Inicializa o cliente
+// Inicializa o Express
+const app = express();
+const port = process.env.PORT || 3000;
+
+// Inicializa o cliente do WhatsApp
 const client = new Client();
 
-client.on('qr', (qr) => {
-  qrcode.generate(qr, { small: true });
+// Rota para exibir o QR Code
+app.get('/qrcode', async (req, res) => {
+  try {
+    client.on('qr', (qr) => {
+      qrcode.toDataURL(qr, (err, url) => {
+        if (err) {
+          return res.status(500).send('Erro ao gerar QR Code');
+        }
+        res.send(`<img src="${url}" alt="QR Code" />`);
+      });
+    });
+  } catch (error) {
+    res.status(500).send('Erro ao gerar QR Code');
+  }
 });
 
+// Inicializa o cliente do WhatsApp
 client.on('ready', () => {
   console.log('Tudo certo! WhatsApp conectado.');
 });
@@ -72,4 +89,10 @@ client.on('message', async (msg) => {
   }
 });
 
+// Inicializa o cliente do WhatsApp
 client.initialize();
+
+// Inicia o servidor
+app.listen(port, () => {
+  console.log(`Servidor rodando na porta ${port}`);
+});
